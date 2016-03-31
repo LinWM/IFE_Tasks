@@ -1,0 +1,116 @@
+body{ margin: 0px; padding: 0px; background-color: #dedede; }
+
+/*头部*/
+.header{ background-color: #333; overflow: hidden; }
+
+.header img, .header ul li{ float: left; }
+.header img{ margin: 5px 40px; }
+
+.header ul{ float: right; margin-right: 20px; }
+.header ul li{ margin-right: 25px; }
+
+.header a{ color: #fff; font-size: 12px; text-decoration: none; }
+.header a:hover{ color: #aba29b; }
+
+/*左边、右边栏*/
+.left{ margin-right: 480px; }
+.right{ width: 480px; position: absolute; top: 55px; right: 0px; }
+
+/*内容主体，分为5个版块(border)，content是几个版块共有的样式*/
+.content{
+    margin: 20px;
+    padding: 25px;
+    background-color: #fff;
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 3px solid #9f9f9f;
+    border-bottom: 3px solid #9f9f9f;
+
+    /*边框渐变*/
+    -moz-border-right-colors: #9f9f9f #848484 #cbcbcb;
+    -moz-border-bottom-colors: #9f9f9f #848484 #cbcbcb;
+    -webkit-border-right-colors: #9f9f9f #848484 #cbcbcb;
+    -webkit-border-bottom-colors: #9f9f9f #848484 #cbcbcb;
+    -o-border-right-colors: #9f9f9f #848484 #cbcbcb;
+    -o-border-bottom-colors: #9f9f9f #848484 #cbcbcb;
+    -ms-border-right-colors: #9f9f9f #848484 #cbcbcb;
+    -ms-border-bottom-colors: #9f9f9f #848484 #cbcbcb;
+    border-right-colors: #9f9f9f #848484 #cbcbcb;
+    border-bottom-colors: #9f9f9f #848484 #cbcbcb;
+}
+.content h3, .content h5{ color:#717674; }
+.content p{ text-indent: 2em; }
+
+/*版块2*/
+.board2 ul li{ list-style: none; }
+
+/*版块3*/
+.board3{ overflow: hidden; }
+.board3 h2{ margin: 0; padding: 0; }
+
+.board3 .img_board{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #cecece;
+    text-align: center;
+    float: left;
+}
+.board3 .img_board img{ width: 110px; margin-top: 10px; }
+
+.board3 .null_tag{ clear: both; }
+
+/*版块4*/
+.board4{ clear: both; }
+
+.board4 ol{ font-weight: bold; }
+.board4 ol li{ line-height: 30px; }
+
+.board4 table{
+    width: 99%;
+    border: solid #e6e6e6;
+    border-width: 1px 0px 0px 1px;
+    margin: 0 auto;
+}
+.board4 table caption{ text-align: left; }
+.board4 table th, .board4 table td{
+    border: solid #e6e6e6;
+    border-width: 0px 1px 1px 0px;
+    padding-left: 10px;
+    text-align: left;
+}
+.board4 table th{ color: #fff; background-color: #333; }
+.board4 table .total{ background-color: #ccc; font-weight: bold; }
+.board4 table .total td{ border: 0px; }
+
+/*版块5*/
+.board5 h3{ color: #000; border-left: 3px solid #cdcdcd; padding-left: 15px; line-height: 35px; }
+
+.board5 form{ width: 99%; margin: 0px auto; font-size: 14px; }
+.board5 form table{ width: 100%; }
+
+.board5 .col1{ width: 40%; text-align: right; }
+.board5 .col2 { width: 60%; }
+.board5 .col2 textarea{ width: 100%; height: 100px; }
+.board5 .tip{ color: #a7a3a4; padding-bottom: 20px; }
+
+.board5 .submit_btn{
+    width: 99%;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #3355d0;
+    font-size: 18px;
+}
+
+/*尾部*/
+.footer{
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    clear: both;
+}
