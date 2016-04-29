@@ -12,7 +12,7 @@ body{ margin: 0px; padding: 0px; background-color: #dedede; }
 .header a{ color: #fff; font-size: 12px; text-decoration: none; }
 .header a:hover{ color: #aba29b; }
 
-/*左边、右边栏*/
+/*左边、右边栏：实现左边自适应，右边固定大小的效果*/
 .left{ margin-right: 480px; }
 .right{ width: 480px; position: absolute; top: 55px; right: 0px; }
 
