@@ -294,14 +294,14 @@ ul li a{
 
 #new_world_beijing_poster1:after{
     content: "";
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 15px solid transparent;
     border-right: 30px solid #FFF;
     border-bottom: 15px solid transparent;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 0px;
 }
 
 #new_world_beijing_poster1 h2{
@@ -389,14 +389,14 @@ ul li a{
 
 #pro_introduction_part3:after{
     content: "";
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border-top: 15px solid transparent;
     border-left: 30px solid #FFF;
     border-bottom: 15px solid transparent;
     position: absolute;
     top: 50%;
-    right: -30;
+    right: -30px;
 }
 
 #pro_introduction_part2 h3, #pro_introduction_part3 h3{
