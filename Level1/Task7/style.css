@@ -1,0 +1,625 @@
+*{ margin: 0px; padding: 0px; }
+h1,h2,h3,h4,h5,h6{ font-family: "黑体"; font-weight: normal; }
+#new_world_page{ min-width: 1300px; margin: 0px auto; }
+
+/* =======================top_bar顶部栏======================= */
+#top_bar{
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+#top_bar h4{
+    width: 105px;
+    height: 60px;
+    background: url(images/new_world_logo_small.png) no-repeat left;
+    font-size: 16pt;
+    text-align: right;
+    line-height: 60px;
+    float: left;
+    margin-left: 60px;
+}
+
+#top_bar ul{
+    float: right;
+    margin-right: 60px;
+}
+
+#top_bar ul li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+
+#top_bar ul a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+ul li a{
+    width: 65px;
+    height: 40px;
+    color: #808388;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#top_bar ul li a:hover{
+    color: #E74E48;
+    background: url(images/underline_red.png) no-repeat bottom;
+}
+
+#top_bar ul>a{
+    width: 50px;
+    height: 24px;
+    color: #E74E48;
+    margin-top: 18px;
+    text-align: right;
+    line-height: 24px;
+    background: url(images/login_icon.png) no-repeat left;
+}
+
+/* =======================首页-滚动栏======================= */
+#front_page #marquee{
+    height: 500px;
+    background: url(images/border1_bg.png);
+    background-size: cover;
+    color: #FFF;
+    padding-top: 250px;
+    padding-left: 120px;
+}
+
+#front_page #marquee h1{
+    font-family: "微软雅黑";
+    font-size: 40pt;
+}
+
+#front_page #marquee p{
+    font-size: 16pt;
+    width: 300px;
+    margin: 10px;
+}
+
+.red_btn, .white_btn:hover{
+    color: #FFF;
+    border: 0px;
+    background-color: #E74F4D;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;/*缓慢转变样式*/
+}
+
+.red_btn:hover, .white_btn{
+    color: #E74F4D;
+    border: 0px;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+#front_page #marquee input{
+    width: 330px;
+    height: 65px;
+    font-size: 24pt;
+    margin: 60px 10px 0px;
+}
+
+/* 首页-内容介绍栏 */
+#front_page #content{
+    text-align: center;
+    overflow: hidden;
+}
+
+#front_page #content div{
+    float: left;
+    width: 25%;
+    height: 250px;
+    color: #797979;
+    font-size: 11pt;
+}
+
+#front_page #content div p{
+    height: 55px;
+    margin: 140px auto;
+    border-right: 2px solid #ABABAB;
+}
+
+#front_page #content div p span{
+    display: inline-block;
+    width: 170px;
+}
+
+#front_page #content #div4 p {
+    border: 0px;
+}
+
+#front_page #content #div1{
+    background: url(images/div1_bg.png) no-repeat center 50px;
+}
+
+#front_page #content #div2{
+    background: url(images/div2_bg.png) no-repeat center 50px;
+}
+
+#front_page #content #div3{
+    background: url(images/div3_bg.png) no-repeat center 50px;
+}
+
+#front_page #content #div4{
+    background: url(images/div4_bg.png) no-repeat center 50px;
+}
+
+/* =======================最新活动版块：头部======================= */
+#lastest_acts_header{
+    background-color: #EDEDED;
+    height: 360px;
+    text-align: center;
+}
+
+#lastest_acts_header img{
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+#lastest_acts_header h1{
+    color: #A0A0A0;
+    font-size: 40pt;
+}
+
+/* 最新活动版块：身体 */
+#lastest_acts_body{
+    height: 340px;
+    text-align: center;
+    background: url(images/look_the_map.png);
+    background-size: cover;
+    color: #FFF;
+    padding-top: 50px;
+}
+
+#lastest_acts_body h4{
+    height: 35px;
+    font-size: 16pt;
+    background: url(images/underline_white.png) no-repeat center bottom;
+}
+
+#lastest_acts_body p{
+    margin-top: 20px;
+    font-size: 10pt;
+}
+
+#lastest_acts_body form{
+    margin-top: 50px;
+}
+
+#lastest_acts_body .styled-select{/*自定义下拉框*/
+    display: inline-block;
+    line-height: 35px;
+    margin: 0px 10px;
+    position: relative;
+}
+
+#lastest_acts_body .styled-select select{
+    display: inline-block;
+    color: #A9A9A9;
+    width: 235px;
+    height: 35px;
+    border: 1px solid #FFF;
+    text-indent: 0.3em;
+}
+
+#lastest_acts_body .styled-select select:hover{
+    border: 1px solid #BF4E48;
+}
+
+#lastest_acts_body .styled-select select option{
+    color: #8C8C8E;
+}
+
+#lastest_acts_body .styled-select:after{
+    content: url(images/up_down_arrow.png);
+    width: 25px;
+    padding-right: 4px;
+    background: #FFF;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    bottom: 1px;
+    
+    pointer-events:none;/*不获取鼠标事件，让下拉框获取*/
+}
+
+#lastest_acts_body #search_btn{
+    width: 235px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 12pt;
+}
+
+.select_placeholder{/*为下拉框设置默认值*/
+    display: none;
+}
+
+/* 最新活动版块：尾部 */
+#lastest_acts_footer{
+    height: 500px;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+#lastest_acts_footer div{
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+#lastest_acts_footer div h4{
+    margin: 10px;
+}
+
+#lastest_acts_footer div h3{
+    margin: 10px;
+    font-size: 16pt;
+}
+
+#lastest_acts_footer div p{
+    margin: 5px;
+    color: #797979;
+    font-size: 10pt;
+}
+
+#lastest_acts_footer img{
+    border: 1px solid #D3D3D3;
+    padding: 10px 6px;
+    background-color: #FFF;
+}
+
+/* =======================项目介绍版块======================= */
+#pro_introduction{
+    overflow: hidden;
+}
+
+#pro_introduction div{
+    float: left;
+    text-align: center;
+}
+
+/* 项目介绍版块：北京海报1 */
+#new_world_beijing_poster1{
+    width: 66%;
+    height: 565px;
+    background: url(images/new_world_beijing_poster1.png);
+    background-size: cover;
+    color: #FFF;
+    position: relative;
+}
+
+#new_world_beijing_poster1:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #FFF;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#new_world_beijing_poster1 h2{
+    font-size: 50px;
+    margin-top: 15%;
+    margin-bottom: -40px;
+}
+
+#new_world_beijing_poster1 h1{
+    font-size: 160px;
+    font-family: "微软雅黑";
+}
+
+#new_world_beijing_poster1 h3{
+    font-size: 22px;
+}
+
+/* 项目介绍版块：部分1 */
+#pro_introduction_part1{
+    width: 34%;
+    height: 565px;
+}
+
+#pro_introduction_part1 h4{
+    font-size: 15pt;
+    margin-top: 38%;
+    margin-bottom: 20px;
+}
+
+#pro_introduction_part1 h4 span{
+    color: #E9504A;
+}
+
+#pro_introduction_part1 p{
+    width: 74%;
+    color: #B1B1B1;
+    font-size: 10pt;
+    line-height: 30px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#pro_introduction_part1 input{
+    width: 110px;
+    height: 35px;
+    border: 1px solid #E74F4D;
+    margin-top: 40px;
+}
+
+#pro_introduction_part1 ul{
+    width: 110px;
+    height: 35px;
+    margin: 15 auto;
+}
+
+#pro_introduction_part1 ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #929292;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#pro_introduction_part1 ul li.active{
+    background-color: #959595;
+}
+
+/* 项目介绍版块：部分2、3 */
+#pro_introduction_part2, #pro_introduction_part3{
+    width: 33%;
+    height: 520px;
+    font-size: 16pt;
+}
+
+#pro_introduction_part2{
+    background-color: #E8504F;
+    color: #FFF;
+}
+
+#pro_introduction_part3{
+    position: relative;
+}
+
+#pro_introduction_part3:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #FFF;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -30;
+}
+
+#pro_introduction_part2 h3, #pro_introduction_part3 h3{
+    margin-top: 35%;
+}
+
+#pro_introduction_part2 h4, #pro_introduction_part3 h4{
+    font-size: 16pt;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#pro_introduction_part2 h4{
+    background: url(images/underline_white.png) no-repeat center bottom;
+}
+
+#pro_introduction_part3 h4{
+    background: url(images/underline_grey.png) no-repeat center bottom;
+}
+
+#pro_introduction_part2 input, #pro_introduction_part3 input{
+    width: 170px;
+    height: 45px;
+    font-size: 16pt;
+    font-family: "黑体";
+    margin-top: 20px;
+}
+
+#pro_introduction_part2 input{
+    border: 1px solid #FFF;
+}
+
+#pro_introduction_part3 input{
+    border: 1px solid #E74F4D;
+}
+
+/* 项目介绍版块：北京海报2 */
+#new_world_beijing_poster2{
+    width: 34%;
+    height: 520px;
+    background: url(images/new_world_beijing_poster2.png);
+    background-size: cover;
+}
+
+/* =======================爱心社区版块======================= */
+#volunteer_community{
+    text-align: center;
+    overflow: hidden;
+    padding: 120px;
+}
+
+#volunteer_community h4{
+    font-size: 16pt;
+    padding-bottom: 5px;
+    background: url(images/underline_red_small.png) no-repeat bottom center;
+}
+
+#volunteer_community h6{
+    color: #B1B1B1;
+    font-size: 10pt;
+    width: 470px;
+    margin: 10px auto 0px;
+    text-align: center;
+}
+
+/* 爱心社区版块：左边协议阅读 */
+#volunteer_community_left{
+    width: 25%;
+    margin-top: 100px;
+    margin-right: 80px;
+    text-align: left;
+    float: left;
+}
+
+#volunteer_community_left h5{
+    font-size: 11pt;
+    margin: 20px 0px;
+    font-family: "微软雅黑";
+}
+
+#volunteer_community_left p{
+    color: #B1B1B1;
+    font-size: 10pt;
+    line-height: 20px;
+}
+
+#volunteer_community_left a{
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    float: right;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #918F90;
+    background: url(images/expand_arrow.png) no-repeat left center;
+}
+
+/* 爱心社区版块：右边志愿者表单 */
+#volunteer_community_right{
+    float: left;
+    width: 65%;
+    margin-top: 100px;
+    text-align: left;
+}
+
+#volunteer_community_right input, #volunteer_community_right textarea{
+    float: left;
+    font-size: 11pt;
+    background-color: #EDEDEF;
+    border: 0px;
+    text-indent: 1em;
+    margin-bottom: 15px;
+}
+
+#volunteer_community_right textarea{
+    padding-top: 13px;
+    resize: none;
+}
+
+#volunteer_community_right .two_column{
+    width: 48.5%;
+    height: 40px;
+}
+
+#volunteer_community_right .two_column_with_space{
+    margin-right: 3%;
+}
+
+#volunteer_community_right .one_column{
+    width: 100%;
+}
+
+#apply_submit_btn{
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+#apply_submit_btn:hover{
+    border: 0px;
+    color: #FFF;
+    background-color: #E74F4D;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+/* =======================关于我们======================= */
+#about_us{
+    height: 360px;
+    text-align: center;
+    background-color: #33363F;
+    padding-top: 1px;
+    color: #FFF;
+}
+
+#about_us h4{
+    font-size: 16pt;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}
+
+#about_us p{
+    width: 520px;
+    font-size: 10pt;
+    margin: 0px auto 20px;
+}
+
+#about_us form{
+    width: 550px;
+    margin: 0px auto 40px;
+    overflow: hidden;
+}
+
+#email_input{
+    float: left;
+    border: 0px;
+    text-indent: 1em;
+    width: 80%;
+    height: 40px;
+}
+
+#email_submit_btn{
+    border: 0px;
+    width: 20%;
+    height: 40px;
+    color: #FFF;
+    font-size: 12pt;
+    background-color: #72727A;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;/*缓慢转变样式*/
+    float: right;
+}
+
+#email_submit_btn:hover{
+    border: 0px;
+    background-color: #E74F4D;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+#about_us a{
+    color: #FFF;
+    text-decoration: none;
+    margin: 40px 10px;
+}
+
+/* =======================底部栏======================= */
+#bottom_bar{
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    font-size: 10pt;
+    background-color: #30303A;
+}
+
+#bottom_bar span{
+    float: left;
+    margin-left: 100px;
+}
+
+#bottom_bar a{
+    color: #FFF;
+    text-decoration: none;
+    float: right;
+    margin-right: 25px;
+}
