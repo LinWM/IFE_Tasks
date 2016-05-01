@@ -1,0 +1,104 @@
+/****************** 6栏网格样式 *******************/
+
+/* 网格容器 */
+.grid-container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 行：清除行浮动，保证行与行之间分开（浮动来源于行的每一列都float） */
+.row:before, .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 列 */
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    height: 80px;
+
+    /*列与列间的间隙*/
+    box-sizing: border-box;/* 解决宽为百分比，而padding为常量的尴尬情况 */
+    padding: 12px;
+    background-color: #FFDCDC;
+}
+
+/* 下面是让整个网格布局根据屏幕宽度响应起来 */
+@media all and (min-width: 992px) {/*large width*/
+    .col-lg-1{ width: 16.66%; }
+    .col-lg-2{ width: 33.33%; }
+    .col-lg-3{ width: 50%;    }
+    .col-lg-4{ width: 66.66%; }
+    .col-lg-5{ width: 83.33%; }
+    .col-lg-6{ width: 100%;   }
+
+    .to_sm{
+        color: #000;
+    }
+
+    .to_md{
+        color: #000;
+    }
+
+    .to_lg{
+        color: #FFF;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {/*medium width*/
+    .col-md-1{ width: 16.66%; }
+    .col-md-2{ width: 33.33%; }
+    .col-md-3{ width: 50%;    }
+    .col-md-4{ width: 66.66%; }
+    .col-md-5{ width: 83.33%; }
+    .col-md-6{ width: 100%;   }
+
+    .to_sm{
+        color: #000;
+    }
+
+    .to_md{
+        color: #FFF;
+    }
+
+    .to_lg{
+        color: #000;
+    }
+}
+
+@media all and (max-width:767px){/*small width*/
+    .col-sm-1{ width: 16.66%; }
+    .col-sm-2{ width: 33.33%; }
+    .col-sm-3{ width: 50%;    }
+    .col-sm-4{ width: 66.66%; }
+    .col-sm-5{ width: 83.33%; }
+    .col-sm-6{ width: 100%;   }
+
+    .to_sm{
+        color: #FFF;
+    }
+
+    .to_md{
+        color: #000;
+    }
+
+    .to_lg{
+        color: #000;
+    }
+}
+
+/* 其它，包括轮廓线、为不同栏目的字体配上不同的颜色等 */
+.outline, .outline *{
+    outline: 1px solid #F6A1A1;
+}
+
+[class*='col-'] > p{
+    background-color: #FFC2C2;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #000;
+}

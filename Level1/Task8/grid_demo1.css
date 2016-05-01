@@ -1,0 +1,73 @@
+/****************** 6栏网格样式 *******************/
+
+/* 网格容器 */
+.grid-container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 行：清除行浮动，保证行与行之间分开（浮动来源于行的每一列都float） */
+.row:before, .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 列 */
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+
+    /*列与列间的间隙*/
+    box-sizing: border-box;/* 解决宽为百分比，而padding为常量的尴尬情况 */
+    padding: 12px;
+    background-color: #FFDCDC;
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%; }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%; }
+
+.outline, .outline *{
+    outline: 1px solid #F6A1A1;
+}
+
+/* 列内部的样式 */
+[class*='col-'] > p{
+    background-color: #FFC2C2;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+/* 下面是让整个网格布局根据屏幕宽度响应起来 */
+@media all and (max-width: 800px) {/*下面的样式会在可视区域的宽度小于800px的时候被应用*/
+    .col-1{ width: 33.33%; }
+    .col-2{ width: 50%;    }
+    .col-3{ width: 83.33%; }
+    .col-4{ width: 100%;   }
+    .col-5{ width: 100%;   }
+    .col-6{ width: 100%;   }
+
+    .row .col-2:last-of-type{
+        width: 100%;
+    }
+
+    .row .col-5 ~ .col-1{
+        width: 100%;
+    }
+}
+
+@media all and (max-width:650px){/*小于650px的时候会应用该样式*/
+    .col-1{ width: 50%;  }
+    .col-2{ width: 100%; }
+    .col-3{ width: 100%; }
+    .col-4{ width: 100%; }
+    .col-5{ width: 100%; }
+    .col-6{ width: 100%; }
+}
