@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent{
+    display: flex;
+    height: 300px;
+    background-color: #000;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #FFF;
+}
