@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE_Level2_Task14</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+(function () {
+ var ul = document.getElementById('aqi-list');
+ var sortCity = [];
+
+ for (var i = 0; i < aqiData.length; i++) {//遍历读取aqiData中各个城市的数据
+   if(aqiData[i][1] > 60){//将大于60的加入待排序数组中
+    sortCity.push(aqiData[i]);
+   }
+ }
+
+ sortCity.sort(function(a, b){//调用sort工具函数对待排序数组进行排序
+    return b[1] - a[1];
+ });
+
+ for (var j = 0; j < sortCity.length; j++) {
+   var listItem = document.createElement("li");
+   listItem.innerText = "第"+(j+1)+"名："+sortCity[j][0]+", "+sortCity[j][1];
+   ul.appendChild(listItem);
+ }
+
+})();
+
+</script>
+</body>
+</html>

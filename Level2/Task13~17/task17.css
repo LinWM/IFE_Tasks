@@ -1,0 +1,81 @@
+*{ margin: 0px; padding: 0px; }
+
+body{
+    font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
+    min-width: 1080px;
+}
+
+.round_board_city legend{ font-size: 16px; }
+
+.round_board_city{
+    margin-top: 100px;/*按盒模型由外到内排列*/
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    padding: 20px;
+    width: 85%;
+    height: 450px;
+
+    margin-left: auto;/*居中布局*/
+    margin-right: auto;
+}
+
+/* 柱状图样式 */
+#aqi-chart-wrap{
+    margin-top: 10px;
+    height:400px;
+    line-height:400px;
+
+    text-align:center;
+    position: relative;
+}
+
+[class^='aqi_bar_']{
+    display: inline-block;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    cursor: pointer;
+    vertical-align: bottom;
+
+    /*默认值*/
+    background-color: #000;
+    height: 100%;
+}
+
+.aqi_bar_black{ background-color: #000; }
+
+.aqi_bar_purple{ background-color: #830080; }
+
+.aqi_bar_red{ background-color: #F10A02; }
+
+.aqi_bar_blue{ background-color: #1801C3; }
+
+.aqi_bar_green{ background-color: #076710; }
+
+/* 日、周、月粒度选择样式 */
+[id^='radio_']{ position: absolute; cursor: pointer; }
+
+#radio_day{ top: 3px; left: 0px; }
+
+#radio_week{ top: 18px; left: 0px; }
+
+#radio_month{ top: 33px; left: 0px; }
+
+label[for^='radio_']{
+    position: absolute;
+    cursor: pointer;
+    line-height: normal;
+}
+
+label[for^='radio_day']{ top: 2px; left: 20px; }
+
+label[for^='radio_week']{ top: 17px; left: 20px; }
+
+label[for^='radio_month']{ top: 32px; left: 20px; }
+
+/* 日、周、月对应不同宽度的柱状图 */
+#radio_day:checked~[class^='aqi_bar_']{ width: 8px; }
+
+#radio_week:checked~[class^='aqi_bar_']{ width: 20px; }
+
+#radio_month:checked~[class^='aqi_bar_']{ width: 60px; }
